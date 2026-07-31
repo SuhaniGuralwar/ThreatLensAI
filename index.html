@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ThreatLens AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡 ThreatLens AI</h1>
+
+        <h3>Phishing Email Detection Portal</h3>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h2 id="totalScans">0</h2>
+                <p>Total Scans</p>
+            </div>
+
+            <div class="card">
+                <h2 id="highRisk">0</h2>
+                <p>High Risk</p>
+            </div>
+
+            <div class="card">
+                <h2 id="mediumRisk">0</h2>
+                <p>Medium Risk</p>
+            </div>
+
+            <div class="card">
+                <h2 id="lowRisk">0</h2>
+                <p>Low Risk</p>
+            </div>
+
+        </div>
+
+        <textarea
+            id="emailText"
+            placeholder="Paste suspicious email here..."
+        ></textarea>
+
+        <br>
+
+        <button onclick="analyzeEmail()">
+            Analyze Email
+        </button>
+
+        <button onclick="clearEmail()">
+            Clear
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 ThreatLens AI | Developed by Suhani Guralwar</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
